@@ -34,7 +34,8 @@ export const HomePageContainer = styled.main`
 
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
     gap: 2rem;
   }
 

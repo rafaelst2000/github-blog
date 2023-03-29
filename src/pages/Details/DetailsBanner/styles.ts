@@ -1,26 +1,18 @@
 import styled from "styled-components";
 
 export const HomeMainCardInfo = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-
-  > div {
-    flex: 1;
-  }
-  
-  img {
-    width: 9.25rem;
-    height: 9.25rem;
-    border-radius: 8px;
-    margin-left: 0.5rem;
-  }
-
-  .name-container {
+  .actions-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  h1 {
+    color: ${props => props.theme["base-title"]};
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
   }
 
   a, a:visited, a:hover, a:active {
@@ -39,7 +31,7 @@ export const HomeMainCardInfo = styled.div`
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 
     li {
       display: flex;
@@ -47,7 +39,7 @@ export const HomeMainCardInfo = styled.div`
       gap: 0.5rem;
 
       span {
-        color: ${props => props.theme["base-subtitle"]};
+        color: ${props => props.theme["base-span"]};
         font-size: 1rem;
       }
     }
