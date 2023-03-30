@@ -8,6 +8,9 @@ export const HomeCardContainer = styled(Link)`
   border: 2px solid transparent;
   cursor: pointer;
   text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  display: block;
   
   &:visited, &:hover, &:active {
     text-decoration: none;

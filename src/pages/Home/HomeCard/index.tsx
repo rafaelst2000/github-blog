@@ -17,7 +17,7 @@ export function HomeCard({ post }: HomeCardProps) {
         <h1>{post.title}</h1>
         <span>{formattedDate}</span>
       </div>
-      <p>{ellipsis(post.body, 181)}</p>
+      <p>{ellipsis(post.body, 150)}</p>
     </HomeCardContainer>
   )
 }

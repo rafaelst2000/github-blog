@@ -46,6 +46,7 @@ export function Home(){
       const response = await api.get(`/search/issues?q=${query}%20repo:${username}/${reponame}`)
       console.log(response.data)
       setPosts(response.data.items)
+      console.log(posts)
     } finally {
       setIsLoading(false)
     }
